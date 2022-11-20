@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "COMPATIBLE_SCREEN_MANIFEST",
+    "kind": "Directory"
+  },
+  "applicationId": "com.chunleethong.flutter_web_admin_template",
+  "variantName": "debug",
+  "elements": []
+}

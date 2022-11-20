@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/chunleethong/flutter_web_admin_template/BuildConfig.java
+ com.chunleethong.flutter_web_admin_template.BuildConfig
