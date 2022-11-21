@@ -4,10 +4,12 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:skadi/skadi.dart';
 
-import 'widgets/budget_card.dart';
-import 'widgets/task_progress_card.dart';
-import 'widgets/total_customer_card.dart';
-import 'widgets/total_profit.dart';
+import 'widgets/timein_card.dart';
+import 'widgets/leave_balance_card.dart';
+// import 'widgets/total_customer_card.dart';
+// import 'widgets/budget_card.dart';
+// import 'widgets/task_progress_card.dart';
+// import 'widgets/total_profit.dart';
 import 'widgets/weekly_sales_chart.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -50,10 +52,11 @@ class _DashboardPageState extends State<DashboardPage> {
           crossAxisSpacing: 16,
           crossAxisCount: max(count, 1),
           children: const [
-            BudgetCard(),
-            TotalCustomerCard(),
-            TaskProgressCard(),
-            TotalProfitCard(),
+            TimeinCard(),
+            Text("My Balances"),
+            LeaveBalanceCard(),
+            // TaskProgressCard(),
+            // TotalProfitCard(),
           ],
         );
       },

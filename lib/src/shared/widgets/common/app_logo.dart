@@ -9,11 +9,6 @@ class AppLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: const [
-        // CircleAvatar(
-        //   radius: 32,
-        //   child: Icon(Icons.dashboard),
-        // ),
-        // SpaceY(),
         // Text( "Hello", style: kBigHeaderStyle), // style decoration
         Text("Sign in to",
           style: kBigHeaderStyle,
@@ -22,7 +17,7 @@ class AppLogo extends StatelessWidget {
           // )
         ),
         Text("Empleyado",
-          style: kBigHeaderStyle,
+          style: cogSubHeaderStyle,
           // style: TextStyle(
           //   fontFamily: 'RobotoMono'
           // )

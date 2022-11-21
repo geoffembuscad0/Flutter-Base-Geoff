@@ -93,6 +93,7 @@ class _RootPageState extends State<RootPage> {
                 drawer: isBigScreen ? null : const SideMenuLayout(),
                 appBar: AppBar(
                   actions: const [
+                    // top right headers menu
                     AppBarNotification(),
                     AppBarLanguage(),
                     AppBarAvatar(),

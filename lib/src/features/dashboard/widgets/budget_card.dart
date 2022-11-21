@@ -11,6 +11,9 @@ class BudgetCard extends DashboardCardContainer {
   String get title => "Logged Employees";
 
   @override
+  String get subTitle => "Logged Employees";
+
+  @override
   String get value => "77";
 
   @override

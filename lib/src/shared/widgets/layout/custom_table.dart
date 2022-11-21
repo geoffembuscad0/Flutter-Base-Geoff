@@ -71,7 +71,7 @@ class _MyCustomDataTableState<T extends Object> extends State<MyCustomDataTable<
   @override
   Widget build(BuildContext context) {
     const headerStyle = TextStyle(
-      color: Colors.black,
+      color: Colors.green,
       fontWeight: FontWeight.bold,
     );
     final table = DataTable(

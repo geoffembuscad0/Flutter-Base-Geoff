@@ -1,10 +1,11 @@
+// Login Page
 import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_web_admin_template/src/core/constant/app_style_decoration.dart';
 import 'package:flutter_web_admin_template/src/core/provider/auth_provider.dart';
 import 'package:flutter_web_admin_template/src/core/router/main_router.dart';
-import 'package:flutter_web_admin_template/src/shared/widgets/common/app_logo.dart';
+import 'package:flutter_web_admin_template/src/shared/widgets/common/login_logo.dart';
 import 'package:get_it/get_it.dart';
 import 'package:go_router/go_router.dart';
 import 'package:oktoast/oktoast.dart';
@@ -60,7 +61,7 @@ class _LoginPageState extends State<LoginPage> with SkadiFormMixin {
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const AppLogo(),
+                  const LoginLogo(),
                   const SpaceY(32),
                   TextFormField(
                     controller: emailTC,

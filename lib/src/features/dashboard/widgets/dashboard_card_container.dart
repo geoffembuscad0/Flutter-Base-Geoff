@@ -5,7 +5,19 @@ import '../../../core/constant/app_style_decoration.dart';
 import '../../../core/constant/app_theme_color.dart';
 
 TextStyle get dashboardCardTitleStyle {
-  return kSubtitleStyle.bold.setColor(AppColor.grey1).copyWith(
+  return kSubtitleStyle.bold.setColor(AppColor.white255).copyWith(
+        letterSpacing: 1.5,
+      );
+}
+
+TextStyle get dashboardCardSubTitleStyle {
+  return kSubtitleStyle.setColor(AppColor.white155).copyWith(
+        letterSpacing: 0.3,
+      );
+}
+
+TextStyle get dashboardCardValueStyle {
+  return kBigHeaderStyle.bold.setColor(AppColor.white255).copyWith(
         letterSpacing: 1.5,
       );
 }
@@ -18,7 +30,7 @@ abstract class DashboardCardContainer extends StatelessWidget {
     return Container(
       margin: EdgeInsets.zero,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: cardBackgroundColor(),
         borderRadius: SkadiDecoration.radius(8),
         boxShadow: [
           BoxShadow(
@@ -39,21 +51,25 @@ abstract class DashboardCardContainer extends StatelessWidget {
                 children: [
                   Text(
                     title.toUpperCase(),
-                    style: dashboardCardTitleStyle,
+                    style: dashboardCardSubTitleStyle,
                   ),
-                  const SpaceY(),
-                  Text(value, style: kBigHeaderStyle),
-                  const SpaceY(24),
+                  Text(value, style: dashboardCardValueStyle),
+                  contentBtn(),
+                  const SpaceY(6),
                   footer(),
                 ],
               ),
             ),
-            SkadiIconButton(
-              onTap: () {},
-              backgroundColor: cardIcon.color,
-              borderRadius: 32,
-              icon: cardIcon.icon,
-            ),
+            SizedBox(
+              height: 60,
+              width: 60,
+              child: SkadiIconButton(
+                onTap: () {},
+                backgroundColor: cardIcon.color,
+                borderRadius: 32,
+                icon: cardIcon.icon
+              )
+            )
           ],
         ),
       ),
@@ -62,7 +78,9 @@ abstract class DashboardCardContainer extends StatelessWidget {
 
   String get title;
   String get value;
+  Widget contentBtn();
   Widget footer();
+  Color cardBackgroundColor();
   DashboardCardIcon get cardIcon;
 }
 

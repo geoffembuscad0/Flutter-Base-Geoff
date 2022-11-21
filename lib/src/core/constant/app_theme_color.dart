@@ -6,4 +6,6 @@ class AppColor {
   static MaterialColor get primaryMaterial => SkadiColor.toMaterial(primary);
 
   static const Color grey1 = Color.fromARGB(100, 247, 247, 247);
+  static const Color white255 = Color.fromARGB(255, 255, 255, 255);
+  static const Color white155 = Color.fromARGB(155, 255, 255, 255);
 }

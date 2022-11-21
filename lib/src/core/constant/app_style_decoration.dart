@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'app_theme_color.dart';
 
 const TextStyle kBigHeaderStyle = TextStyle(
-  fontSize: 28,
+  fontSize: 34,
   fontWeight: FontWeight.bold,
 );
 
@@ -20,8 +20,29 @@ const TextStyle kSubHeaderStyle = TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.w600,
 );
-const TextStyle cogSubHeaderStyle = TextStyle(
+const TextStyle aSubHeaderStyle = TextStyle(
+  fontSize: 30,
+  fontWeight: FontWeight.w600
+);
+const TextStyle abSubHeaderStyle = TextStyle(
+  fontSize: 30,
+  fontWeight: FontWeight.w600
+);
+const btnLabel = TextStyle(
   fontSize: 20,
+  fontWeight: FontWeight.bold
+);
+const labelCompanyAuthNotesHead = TextStyle(
+  fontSize: 16,
+  fontWeight: FontWeight.bold,
+  color: Color.fromARGB(221, 144, 144, 144)
+);
+const labelCompanyAuthNotesBody = TextStyle(
+  fontSize: 16,
+  color: Color.fromARGB(221, 144, 144, 144)
+);
+const TextStyle cogSubHeaderStyle = TextStyle(
+  fontSize: 32,
   fontWeight: FontWeight.w600,
   color: AppColor.primary
 );
@@ -31,7 +52,7 @@ const TextStyle kTitleStyle = TextStyle(
 );
 const TextStyle kSubtitleStyle = TextStyle(
   fontSize: 16,
-  fontWeight: FontWeight.w500,
+  fontWeight: FontWeight.w400,
 );
 const TextStyle kNormalStyle = TextStyle(
   fontSize: 14,

@@ -11,25 +11,39 @@ class TotalCustomerCard extends DashboardCardContainer {
   String get title => "total hired employees";
 
   @override
+  String get subTitle => "total hired employees";
+
+  @override
   String get value => "86";
 
   @override
+  Widget contentBtn(){
+    return Container();
+  }
+
+  @override
   Widget footer() {
-    return Row(
-      children: [
-        const Icon(Icons.arrow_upward, color: Colors.green),
-        Text("12% ", style: kNormalStyle.green),
-        Text("Since last month", style: kNormalStyle.grey),
-      ],
-    );
+    return Column(children: <Widget>[
+      Row(
+        children: [
+          const Icon(Icons.arrow_upward, color: Colors.green),
+          Text("12% ", style: kNormalStyle.green),
+          Text("Since last month", style: kNormalStyle.grey),
+        ],
+      ),
+      Row(
+        children: [
+          const Icon(Icons.arrow_upward, color: Colors.green),
+          Text("12% ", style: kNormalStyle.green),
+          Text("Since last month", style: kNormalStyle.grey),
+        ],
+      )
+    ]);
   }
 
   @override
   DashboardCardIcon get cardIcon => DashboardCardIcon(
         Colors.green,
-        const Icon(
-          Icons.people,
-          color: Colors.white,
-        ),
+        const Icon(Icons.people, color: Colors.white, size: 70),
       );
 }

@@ -11,6 +11,7 @@ class AppRoutes {
   //
   static const login = "/login";
   static const register = "/register";
+  static const companyAuth = "/company-auth";
 }
 
 const List<String> kAuthenticatedRoutes = [
@@ -23,12 +24,13 @@ const List<String> kAuthenticatedRoutes = [
   AppRoutes.message,
   AppRoutes.request,
   AppRoutes.productDetail,
+  AppRoutes.companyAuth
 ];
 
 //
 const List<String> kUnauthenticatedRoutes = [
   AppRoutes.login,
-  AppRoutes.register,
+  AppRoutes.companyAuth,
 ];
 
 abstract class AppSubRoute {
