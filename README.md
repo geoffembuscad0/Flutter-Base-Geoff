@@ -1,4 +1,4 @@
-# Cognitif Empleyado Mobile App
+# Cogz Empliyado Mobile App
 
 Experiment from learnings in Flutter cross-platform for Admin dashboard.
 UI inspired from Material Kit : [Material React kit](https://material-kit-react.devias.io/)
